@@ -22,11 +22,13 @@
 
 	//  as the result1, the variable will return 3 type data. string or number or undefined
 	// if we know exactly what is the type of this variable. then we can set assertion
-	// suppose we know result1 will return sting type. then we can set it as string
+	// suppose we know result1 will return string type. then we can set it as string
 	const result1 = kgToGm("1000") as string
+	console.log(typeof result1)
 
 	// and we know result2 will return number type. then we can set it as number
 	const result2 = kgToGm(1000) as number
+	console.log(typeof result2)
 
 	// warning: if we don't know what type would be return. then don't set assertion.
 	type CustomError = {
@@ -36,7 +38,7 @@
 	try {
 	} catch (error) {
 		// if we try to console the error message. then we will got an error. that's why we should create a custom type and set as assertion on error message
-		console.log((error as CustomError).message)
+		// console.log((error as CustomError).message)
 	}
 
 	//
