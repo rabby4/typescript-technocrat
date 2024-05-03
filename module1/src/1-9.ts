@@ -26,6 +26,11 @@
 	type Name = string
 	const firstName: Name = "Rabby"
 
+	// Number type alias
+	type MyNumber = number
+	const theNumber: MyNumber = 1234
+
+	// Boolean type alias
 	type IsAdmin = boolean
 	const isAdmin: IsAdmin = true
 
